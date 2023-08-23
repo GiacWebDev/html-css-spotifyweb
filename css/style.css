@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   display: flex;
   text-align: start;
@@ -35,19 +39,37 @@
 
 
 /* MAIN */
-/* generic structure */
+
+main .top-bar {
+  display: flex;
+  position: absolute;
+  justify-content: right;
+  align-items: center;
+  right: 0;
+  height: 70px;
+  width: calc(100% - 225px);
+  background-color: #080b12c6
+}
+
+main .top-bar a{
+  font-size: .7rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  
+}
+
+main .top-bar .button {
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  width: fit-content;
+}
 
 main .maxi-container{
   display: flex;
   flex-direction: row;
-  height: calc(100vh - 70px);
-}
-
-main .top-bar {
-  position: absolute;
-  right: 0;
-  height: 50px;
-  width: calc(100% - 225px);
+  height: calc(100vh - 50px);
 }
 
 main .maxi-container .column-left {
@@ -68,7 +90,7 @@ main .maxi-container .column-left .top .playlist {
 
 
 main .maxi-container .column-left .top .logo {
-  height: 50px;
+  height: 70px;
 }
 
 main .maxi-container .column-left .top .home {
@@ -87,15 +109,11 @@ main .maxi-container .column-left .bottom {
 /* RIGHT COLUMN */
 main .maxi-container .column-right {
   overflow: auto;
-  margin-top: 50px;
+  padding-top: 80px;
   width: calc(100% - 225px);
-  height: calc(100% - 50px);
+  height: 100%
 }
 
-main .maxi-container .column-right .top-menu {
-  height: 50px;
-  width: 100%;
-}
 
 /* COLUMN BOTTOM STRIPE END */
 .column-bottom {
