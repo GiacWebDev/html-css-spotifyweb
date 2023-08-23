@@ -9,22 +9,58 @@
   background-color: rgb(21, 224, 224);
 }
 
+.debug-r {
+  border: 1px solid black;
+  background-color: red;
+}
+
+.debug-g {
+  border: 1px solid black;
+  background-color: greenyellow;
+}
+
+.debug-b {
+  border: 1px solid black;
+  background-color: blue;
+}
+
 
 /* MAIN */
 
-main {
-  display: flex;
-  flex-direction: row;
+main .top-bar {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  width: calc(100% - 225px);
 }
 
-main .column-left {
-  width: 225px;
+main .maxi-container{
+  display: flex;
+  flex-direction: row;
   height: calc(100vh - 90px);
 }
 
-main .column-right {
-  width: calc(100% - 225px)
+main .maxi-container .column-left {
+  position: relative;
+  width: 225px;
 }
+
+main .maxi-container .column-left .top {
+  height: calc(100% - 90px);
+}
+
+main .maxi-container .column-left .bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+main .maxi-container .column-right {
+  width: calc(100% - 225px);
+}
+
+/* main .column-right {
+  width: calc(100% - 55px)
+} */
 
 
 /* 
@@ -52,12 +88,12 @@ main .column-right {
 
 /* XS */
 @media screen and (max-width: 450px) {
-  main .column-left {
-    width: 50px;
-    height: calc(100vh - 50px);
-  }
-}
 
-main .column-right {
-  width: calc(100% - 50px)
+  main .maxi-container .column-left {
+    width: 50px;
+    }
+
+  main .maxi-container .column-right {
+    width: calc(100% - 50px);
+  }
 }
