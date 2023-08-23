@@ -6,6 +6,7 @@
 
 .container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .debug {
@@ -88,6 +89,7 @@ main .maxi-container .column-left .bottom {
 
 /* RIGHT COLUMN */
 main .maxi-container .column-right {
+  overflow: auto;
   margin-top: 50px;
   width: calc(100% - 225px);
   height: calc(100% - 50px);
@@ -98,10 +100,20 @@ main .maxi-container .column-right .top-menu {
   width: 100%;
 }
 
-main .maxi-container .column-right .recently-played {
-
+main .maxi-container .column-right .recently-played .container {
+  justify-content: space-between;
 }
 
+main .maxi-container .column-right .recently-played .col {
+  width: calc(100% / 6);
+  min-width: 200px;
+  height: 300px;
+  padding: 5px
+} 
+
+main .maxi-container .column-right .recently-played .col .card {
+  height: 100%;
+}
 
 
 /* COLUMN BOTTOM STRIPE END */
