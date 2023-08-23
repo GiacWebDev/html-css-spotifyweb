@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+}
+
 .debug {
   border: 1px solid black;
 }
@@ -30,11 +34,12 @@
 
 
 /* MAIN */
+/* generic structure */
 
 main .maxi-container{
   display: flex;
   flex-direction: row;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 70px);
 }
 
 main .top-bar {
@@ -50,27 +55,66 @@ main .maxi-container .column-left {
 }
 
 main .maxi-container .column-left .top {
-  height: calc(100% - 90px);
+  height: calc(100% - 70px);
+  width: 100%;
+}
+
+main .maxi-container .column-left .top .playlist {
+  display: flex;
+}
+
+
+main .maxi-container .column-left .top .logo {
+  height: 50px;
+}
+
+main .maxi-container .column-left .top .home {
+  width: 100%;
+  height: 100px;
+}
+
+main .maxi-container .column-left .top .playlist {
+  height: calc(100vh - 290px);
+  overflow: auto;
 }
 
 main .maxi-container .column-left .bottom {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  height: 70px;
   align-items: center;
 }
 
+/* RIGHT COLUMN */
 main .maxi-container .column-right {
   margin-top: 50px;
   width: calc(100% - 225px);
   height: calc(100% - 50px);
 }
 
-/* main .column-right {
-  width: calc(100% - 55px)
-} */
+main .maxi-container .column-right .top-menu {
+  height: 50px;
+  width: 100%;
+}
+
+main .maxi-container .column-right .recently-played {
+
+}
 
 
-/* 
+
+/* COLUMN BOTTOM STRIPE END */
+.column-bottom {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  color: white;
+  background-color: #282828;
+}
+
+
+/*
 ************************************
             MEDIA QUERY
 ************************************
