@@ -6,6 +6,10 @@
 
 .debug {
   border: 1px solid black;
+}
+
+.debug-a {
+  border: 1px solid black;
   background-color: rgb(21, 224, 224);
 }
 
@@ -27,17 +31,17 @@
 
 /* MAIN */
 
+main .maxi-container{
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 90px);
+}
+
 main .top-bar {
   position: absolute;
   right: 0;
   height: 50px;
   width: calc(100% - 225px);
-}
-
-main .maxi-container{
-  display: flex;
-  flex-direction: row;
-  height: calc(100vh - 90px);
 }
 
 main .maxi-container .column-left {
@@ -52,10 +56,13 @@ main .maxi-container .column-left .top {
 main .maxi-container .column-left .bottom {
   position: absolute;
   bottom: 0;
+  align-items: center;
 }
 
 main .maxi-container .column-right {
+  margin-top: 50px;
   width: calc(100% - 225px);
+  height: calc(100% - 50px);
 }
 
 /* main .column-right {
@@ -88,6 +95,11 @@ main .maxi-container .column-right {
 
 /* XS */
 @media screen and (max-width: 450px) {
+
+  main .top-bar {
+    width: calc(100% - 50px);
+  }
+  
 
   main .maxi-container .column-left {
     width: 50px;
