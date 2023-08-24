@@ -32,6 +32,10 @@ h3 {
   font-size: .9rem;
 }
 
+p {
+  color: var(--greytext);
+}
+
 :root {
   --greytext: #787A7F
 }
@@ -102,7 +106,6 @@ main .top-bar .button {
 
 main .maxi-container{
   display: flex;
-  flex-direction: column;
   height: calc(100vh - 70px);
 }
 
@@ -151,6 +154,10 @@ main .maxi-container .column-left .home a {
   align-items: center;
 }
 
+main .maxi-container .column-left .home .desktop {
+  padding: 15px 0;
+}
+
 main .maxi-container .column-left .home .desktop img {
   width: 25px;
   margin-right: 5px;
@@ -166,6 +173,7 @@ main .maxi-container .column-left .home .desktop img {
 main .maxi-container .column-left .crea-playlist {
   display: flex;
   align-items: center;
+  padding: 10px 0;
 }
 
 main .maxi-container .column-left .crea-playlist .add {
@@ -178,7 +186,7 @@ main .maxi-container .column-left .crea-playlist img {
 
 main .maxi-container .column-left .playlist {
   display: flex;
-  /* height: calc(100vh - 140px); */
+  height: calc(100vh - 370px);
   overflow: auto;
 }
 
