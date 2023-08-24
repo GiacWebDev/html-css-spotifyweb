@@ -187,7 +187,7 @@ main .maxi-container .column-left .crea-playlist img {
 
 main .maxi-container .column-left .playlist {
   display: flex;
-  height: calc(100vh - 415px);
+  height: calc(100vh - 430px);
   overflow: auto;
 }
 
@@ -346,8 +346,33 @@ main .maxi-container .column-right {
   main .maxi-container .column-left .home .mobile img {
     width: 25px;
   }
-  
 
+  main .maxi-container .column-left .bottom .download {
+    justify-content: center;
+  }
+
+  main .maxi-container .column-left .bottom .account {
+    justify-content: center;
+  }
+
+  main .maxi-container .column-left .bottom .account .avatar,
+  main .maxi-container .column-left .bottom .download .icon {
+    margin-right: 0;
+  }
+
+  main .maxi-container .column-left .bottom .install {
+    display: none;
+  }
+  
+  main .maxi-container .column-left .bottom h5 {
+    display: none;
+  }
+
+  main .maxi-container .column-left .bottom .download {
+    border-bottom: none;
+  }
+  
+  
   main .desktop {
     display: none;
   }
