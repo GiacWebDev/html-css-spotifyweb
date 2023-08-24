@@ -102,7 +102,7 @@ main .top-bar .button {
 
 main .maxi-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: calc(100vh - 70px);
 }
 
@@ -178,7 +178,7 @@ main .maxi-container .column-left .crea-playlist img {
 
 main .maxi-container .column-left .playlist {
   display: flex;
-  height: calc(100vh - 140px);
+  /* height: calc(100vh - 140px); */
   overflow: auto;
 }
 
