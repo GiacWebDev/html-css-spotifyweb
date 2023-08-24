@@ -120,6 +120,7 @@ main .maxi-container .column-left {
   width: 225px;
   background-color: #000;
   padding-left: 15px;
+  padding-bottom: 10px;
 }
 
 main .maxi-container .column-left .top {
@@ -186,7 +187,7 @@ main .maxi-container .column-left .crea-playlist img {
 
 main .maxi-container .column-left .playlist {
   display: flex;
-  height: calc(100vh - 370px);
+  height: calc(100vh - 415px);
   overflow: auto;
 }
 
@@ -202,14 +203,46 @@ main .maxi-container .column-left .playlist li {
 
 /* BOTTOM COLUMN LEFT */
 main .maxi-container .column-left .bottom {
-  display: flex;
   width: 100%;
   height: 70px;
+}
+
+main .maxi-container .column-left .bottom .download {
+  display: flex;
+  width: 90%;
+  padding-bottom: 10px;
+  border-bottom: 0.2px solid var(--greytext);
+}
+
+main .maxi-container .column-left .bottom .icon {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+
+main .maxi-container .column-left .bottom .icon img {
+  width: 15px;
+}
+
+main .maxi-container .column-left .bottom .account {
+  display: flex;
+  margin-top: 10px;
   align-items: center;
 }
 
+main .maxi-container .column-left .bottom .account .avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+  border-radius: 50px;
+  background-color: var(--greytext);
+  background-image: url("/img/profile.svg");
+}
 
-
+main .maxi-container .column-left .bottom .account h5 {
+  font-size: 0.9rem;
+  
+}
 
 
 
