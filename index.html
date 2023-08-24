@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
@@ -13,7 +14,9 @@
 </head>
 <body>
 
-  <main>
+
+  <div id="main-wrapper">
+    <main>
 
       <div class="top-bar">
         <a href="#"><div class="button">EFFETTUA L'UPGRADE</div></a>
@@ -25,30 +28,67 @@
         
         <!-- LEFT COLUMN -->
 
-        <div class="column-left debug-a">
+        <div class="column-left">
 
           <!-- UPPER PART -->
           <div class="top">
             <div class="up">
-
-              <div class="logo debug-g">
-                logo
+              
+              <div class="desktop">
+                <div class="logo debug">
+                  <img src="img/logo.svg" alt="logo">
+                </div>
               </div>
 
-              <div class="home debug-r">
+              <div class="mobile">
+                <div class="logo debug">
+                  <img src="img/logo-small.svg" alt="logo">
+                </div>
+              </div>
+
+              <div class="home  debug">
+                <ul class="desktop">
+                  <li><a href="#"><i class="fa-solid fa-house" style="color: #d2d2d2;"></i> Home</a></li>
+                  <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #d2d2d2;"></i> Cerca</a></li>
+                  <li><a href="#"><i class="fa-solid fa-book-open-reader" style="color: #d2d2d2;"></i> La tua libreria</a></li>
+                </ul>
+
+                <div class="home mobile">
+                  <ul>
+                    <li><a href="#"><i class="fa-solid fa-house" style="color: #d2d2d2;"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #d2d2d2;"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-book-open-reader" style="color: #d2d2d2;"></i></a></li>
+                  </ul>
+                </div>            
               </div>
             </div>
 
             <!-- DOWNER PART OVERFLOW -->
 
-            <div class="playlist">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam animi sunt quia, nulla modi culpa ex rerum debitis unde cum facilis harum labore nobis voluptates, illo sed impedit dolorem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet eum temporibus eius vel, ea esse consequuntur molestias error dolores. Veritatis eligendi culpa similique nemo perferendis iste sit velit, dolorum doloribus quisquam facilis at laboriosam maxime illo eos assumenda ipsum debitis ut nulla saepe deserunt dignissimos suscipit sint! Minus, officia.
-            </div>
+            <div class="top-playlist desktop">
+              <h3>PLAYLIST</h3>
+              <div class="crea-playlist">
+                <div class="add">imm</div>
+                <div class="testo">Crea Playlist</div>
+              </div>
 
+              <div class="playlist desktop">
+                <ul>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                </ul>
+              </div>
+            </div>
+            
           </div>
 
           <!-- div sotto nella colonna sx -->
-          <div class="bottom debug-g">
+          <div class="bottom debug">
             3
           </div>
 
@@ -63,11 +103,22 @@
 
         </div>
       </div>
-      
-  </main>
 
-  <div class="column-bottom">
-    5
+    
+    </main>
+    
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <div class="player">
+        <div class="player-left debug">elements</div>
+        <div class="player-center debug">elements</div>
+        <div class="player-right debug">elements</div>
+      </div>
+
+    </footer>
   </div>
   
 </body>
