@@ -36,6 +36,11 @@ p {
   color: var(--greytext);
 }
 
+.active {
+  color: white;
+  border-left: 1px solid var(--greenactive);
+}
+
 :root {
   --greytext: #787A7F;
   --paddingleft: 0px 0px 0px 15px;
@@ -156,12 +161,12 @@ main .maxi-container .column-left .home ul {
 
 main .maxi-container .column-left .home li {
   margin: 6px 0;
-  padding: var(--paddingleft);
 }
 
 main .maxi-container .column-left .home a {
   display: flex;
   align-items: center;
+  padding: var(--paddingleft);
 }
 
 main .maxi-container .column-left .home a:hover {
@@ -331,6 +336,7 @@ main .maxi-container .column-right {
 /* PLAYER LEFT */
 .player .player-left {
   padding-left: 10px;
+  width: 30%;
 }
 
 .player .player-left img {
@@ -434,7 +440,10 @@ main .maxi-container .column-right {
 /* PLAYER RIGHT */
 
 .player .player-right {
+  display: flex;
+  justify-content: end;
   padding-right: 10px;
+  width: 30%;
 }
 
 .player .player-right .icons i {
@@ -522,7 +531,7 @@ main .maxi-container .column-right {
     align-items: center;
   }
 
-  main .maxi-container .column-left .home li {
+  main .maxi-container .column-left .home a {
     padding-left: 0;
   }
 
