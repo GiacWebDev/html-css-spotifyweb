@@ -39,6 +39,7 @@ p {
 :root {
   --greytext: #787A7F;
   --paddingleft: 0px 0px 0px 15px;
+  --greenactive: #C6F671;
 }
 
 
@@ -326,11 +327,8 @@ main .maxi-container .column-right {
   align-items: center;
 }
 
-.player .player-center {
-  justify-content: center;
-  width: 40%;
-}
 
+/* PLAYER LEFT */
 .player .player-left {
   padding-left: 10px;
 }
@@ -346,14 +344,92 @@ main .maxi-container .column-right {
 
 .player .player-left h4 {
   font-size: .9rem;
+  color: white;
 }
 
 .player .player-left p {
   font-size: .8rem;
 }
 
+.player .player-left p:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .player .player-left .icons span {
   margin-right: 10px;
+}
+
+
+/* PLAYER CENTER */
+.player .player-center {
+  display: block;
+  width: 40%;
+}
+
+.player .player-center .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+  width: 100%;
+}
+
+.player .player-center .icons i {
+  cursor: pointer;
+  font-size: 17px;
+  margin: 0px 15px;
+}
+
+.player .player-center .icons i:nth-child(3) {
+  font-size: 28px;
+}
+
+.player .player-center .icons i:hover {
+  transform: scale(1.1);
+}
+
+.player .player-center .time {
+  display: flex;
+  width: 100%;
+  height: 45%;
+}
+
+.player .player-center .time .time-bar {
+  width: 80%;
+}
+
+.player .player-center .time .time-bar .bar {
+  height: 1px;
+  border: 1px solid #6A6A6A;
+}
+
+
+/* PLAYER RIGHT */
+
+.player .player-right {
+  padding-right: 10px;
+}
+
+.player .player-right .icons i {
+  cursor: pointer;
+  margin: 0px 8px;
+}
+
+.player .player-right .volume-bar .bar {
+  height: 5px;
+  margin-left: 8px;
+  background-color: var(--greytext);
+  width: 90px;
+}
+
+.player .player-right .volume-bar .bar .progress {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: var(--greenactive);
 }
 
 
