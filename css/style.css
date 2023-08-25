@@ -371,6 +371,7 @@ main .maxi-container .column-right {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
   height: 55%;
   width: 100%;
 }
@@ -391,18 +392,43 @@ main .maxi-container .column-right {
 
 .player .player-center .time {
   display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
   width: 100%;
   height: 45%;
 }
 
+.player .player-center .time .time-min,
+.player .player-center .time .time-max {
+  display: flex;
+  align-items: center;
+}
+
 .player .player-center .time .time-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
   width: 80%;
 }
 
 .player .player-center .time .time-bar .bar {
-  height: 1px;
-  border: 1px solid #6A6A6A;
+  height: 5px;
+  background-color: var(--greytext);
+  width: 100%;
+  border-radius: 50px;
 }
+
+.player .player-center .time .time-bar .bar .progress {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: white;
+}
+
+
 
 
 /* PLAYER RIGHT */
@@ -430,6 +456,10 @@ main .maxi-container .column-right {
   width: 30%;
   height: 100%;
   background-color: var(--greenactive);
+}
+
+.player .player-right .volume-bar .bar .progress i {
+  cursor: pointer;
 }
 
 
