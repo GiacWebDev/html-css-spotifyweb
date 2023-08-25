@@ -37,7 +37,8 @@ p {
 }
 
 :root {
-  --greytext: #787A7F
+  --greytext: #787A7F;
+  --paddingleft: 0px 0px 0px 15px;
 }
 
 
@@ -107,6 +108,7 @@ main .top-bar .button {
 main .maxi-container{
   display: flex;
   height: calc(100vh - 70px);
+  overflow: hidden;
 }
 
 
@@ -119,8 +121,8 @@ main .maxi-container .column-left {
   position: relative;
   width: 225px;
   background-color: #000;
-  padding-left: 15px;
   padding-bottom: 10px;
+  height: 100%;
 }
 
 main .maxi-container .column-left .top {
@@ -132,6 +134,7 @@ main .maxi-container .column-left .top .logo {
   display: flex;
   align-items: center;
   height: 70px;
+  padding: var(--paddingleft);
 }
 
 main .maxi-container .column-left .logo img {
@@ -140,6 +143,10 @@ main .maxi-container .column-left .logo img {
 
 main .maxi-container .column-left .logo.mobile {
   display: none;
+}
+
+main .maxi-container .column-left .home {
+  padding: var(--paddingleft);
 }
 
 main .maxi-container .column-left .home ul {
@@ -171,6 +178,11 @@ main .maxi-container .column-left .home .desktop img {
 
 
 /* COLUMN LEFT PLAYLIST */
+
+main .maxi-container .column-left .top-playlist {
+  padding: var(--paddingleft);
+}
+
 main .maxi-container .column-left .crea-playlist {
   display: flex;
   align-items: center;
@@ -189,6 +201,7 @@ main .maxi-container .column-left .playlist {
   display: flex;
   height: calc(100vh - 430px);
   overflow: auto;
+  padding: var(--paddingleft);
 }
 
 main .maxi-container .column-left .playlist li {
@@ -205,6 +218,7 @@ main .maxi-container .column-left .playlist li {
 main .maxi-container .column-left .bottom {
   width: 100%;
   height: 70px;
+  padding: var(--paddingleft);
 }
 
 main .maxi-container .column-left .bottom .download {
@@ -329,12 +343,14 @@ main .maxi-container .column-right {
     width: calc(100% - 50px);
   }
 
-  main .maxi-container .column-left .logo {
+  main .maxi-container .column-left .logo .mobile {
     justify-content: center;
+    padding: 0;
   }
 
   main .maxi-container .column-left .home {
     justify-content: center;
+    padding: 0;
   }
 
   main .maxi-container .column-left .home .mobile ul {
@@ -349,6 +365,10 @@ main .maxi-container .column-right {
 
   main .maxi-container .column-left .bottom .download {
     justify-content: center;
+  }
+
+  main .maxi-container .column-left .bottom {
+    padding: 0;
   }
 
   main .maxi-container .column-left .bottom .account {
