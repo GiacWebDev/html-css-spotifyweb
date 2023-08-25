@@ -237,7 +237,7 @@ main .maxi-container .column-left .crea-playlist img {
 
 main .maxi-container .column-left .playlist {
   display: flex;
-  height: calc(100vh - 430px);
+  height: calc(100% -  284px);
   overflow: auto;
 }
 
@@ -255,7 +255,6 @@ main .maxi-container .column-left .playlist li {
 /* BOTTOM COLUMN LEFT */
 main .maxi-container .column-left .bottom {
   width: 100%;
-  height: 70px;
   padding: var(--paddingleft);
 }
 
@@ -422,6 +421,7 @@ main .maxi-container .column-right {
   background-color: var(--greytext);
   width: 100%;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .player .player-center .time .time-bar .bar .progress {
@@ -432,6 +432,22 @@ main .maxi-container .column-right {
   height: 100%;
   border-radius: 50px;
   background-color: white;
+}
+
+.player .player-center .time .time-bar .bar .progress:hover {
+  background-color: var(--greenactive);
+}
+
+.player .player-center .time .time-bar .bar .progress i {
+  display: none;
+}
+
+.player .player-center .time .time-bar .bar .progress:hover i{
+  display: block;
+}
+
+.player .player-center .time .time-bar .bar .progress:hover {
+  background-color: var(--greenactive);
 }
 
 
