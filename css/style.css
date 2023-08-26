@@ -319,7 +319,7 @@ main .maxi-container .column-right {
 .column-right .menu-bar {
   text-align: center;
   padding: 5px 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .column-right .menu-bar li {
@@ -353,7 +353,6 @@ main .maxi-container .column-right {
 
 .column-right .card img {
   width: 100%;
-  margin-bottom: 5px;
 
 }
 .column-right .card .cover {
@@ -373,7 +372,7 @@ main .maxi-container .column-right {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100% - 5px);
+  height: calc(100% - 4px);
   font-size: 60px;
   background-color: #0000007a;
 }
@@ -385,6 +384,30 @@ main .maxi-container .column-right {
 .column-right .card p {
   font-size: .8rem;
 }
+
+.column-right .central-section,
+.column-right .bottom-section {
+  margin-top: 50px;
+}
+
+.column-right .bottom-section img {
+  border-radius: 50%;
+}
+
+.column-right .bottom-section .card:hover .layover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 4px);
+  font-size: 60px;
+  border-radius: 50%;
+  background-color: #0000007a;
+}
+
 
 
 
