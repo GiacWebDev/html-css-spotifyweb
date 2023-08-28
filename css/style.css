@@ -42,13 +42,8 @@ p {
 
 .active {
   color: white;
-  border-left: 1px solid var(--greenactive);
 }
 
-.active-right {
-  border-bottom: 1px solid var(--greenactive);
-  border-width: 20%;
-}
 
 :root {
   --greytext: #787A7F;
@@ -170,12 +165,17 @@ main .maxi-container .column-left .home ul {
 
 main .maxi-container .column-left .home li {
   margin: 6px 0;
+  border-left: 2px solid transparent;
+}
+
+main .maxi-container .column-left .home li.active {
+border-left: 2px solid var(--greenactive);
 }
 
 main .maxi-container .column-left .home a {
   display: flex;
   align-items: center;
-  padding: var(--paddingleft);
+  padding-left: 13px;
 }
 
 main .maxi-container .column-left .home a:hover {
@@ -214,11 +214,11 @@ main .maxi-container .column-left .crea-playlist {
 main .maxi-container .column-left .crea-playlist a {
   display: flex;
   align-items: center;
+  margin-left: 5px;
 }
 
-main .maxi-container .column-left .crea-playlist span::before {
+main .maxi-container .column-left .crea-playlist .add {
   display: inline-block;
-  content: '+';
   width: 40px;
   height: 40px;
   background-color: #999;
@@ -226,10 +226,13 @@ main .maxi-container .column-left .crea-playlist span::before {
   text-align: center;
   color: black;
   font-size: 35px;
-  margin-right: 10px;
+  cursor: pointer;
 }
 
-main .maxi-container .column-left .crea-playlist span:hover,
+main .maxi-container .column-left .crea-playlist .add:hover {
+  background-color: white;
+}
+
 main .maxi-container .column-left .crea-playlist p:hover,
 main .maxi-container .column-left .playlist a:hover,
 main .maxi-container .column-left .bottom .install p:hover {
@@ -324,9 +327,18 @@ main .maxi-container .column-right {
 }
 
 .column-right .menu-bar li {
+  position: relative;
   display: inline-block;
   margin: 0 10px;
   padding-bottom: 5px;
+}
+
+.column-right .menu-bar li::after .active{
+  position: absolute;
+  color: var(--greenactive);
+  height: 1px;
+  width: 20%;
+  bottom: 0;
 }
 
 .column-right .menu-bar li a {
