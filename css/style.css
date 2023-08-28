@@ -47,6 +47,7 @@ p {
 
 .active-right {
   border-bottom: 1px solid var(--greenactive);
+  border-width: 20%;
 }
 
 :root {
@@ -301,7 +302,7 @@ main .maxi-container .column-left .bottom .account .avatar {
 
 main .maxi-container .column-left .bottom .account h5 {
   font-size: 0.9rem;
-  
+  color: white;
 }
 
 
@@ -459,6 +460,10 @@ main .maxi-container .column-right {
   color: white;
 }
 
+.player .player-left h4:hover {
+  text-decoration: underline;
+}
+
 .player .player-left p {
   font-size: .8rem;
 }
@@ -468,8 +473,13 @@ main .maxi-container .column-right {
   text-decoration: underline;
 }
 
-.player .player-left .icons span {
+.player .player-left .icons a {
   margin-right: 10px;
+  font-size: 1rem;
+}
+
+.player .player-left .icons a:hover {
+  color: white;
 }
 
 
@@ -541,6 +551,18 @@ main .maxi-container .column-right {
   background-color: white;
 }
 
+.player .player-center .time .time-bar .bar .progress .point {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
+.player .player-center .time .time-bar .bar:hover .point {
+  display: block;
+}
+
 .player .player-center .time .time-bar .bar .progress:hover {
   background-color: var(--greenactive);
 }
@@ -553,7 +575,7 @@ main .maxi-container .column-right {
   display: block;
 }
 
-.player .player-center .time .time-bar .bar .progress:hover {
+.player .player-center .time .time-bar .bar:hover .progress {
   background-color: var(--greenactive);
 }
 
@@ -593,8 +615,20 @@ main .maxi-container .column-right {
   border-radius: 50px;
 }
 
-.player .player-right .volume-bar .bar .progress:hover {
+.player .player-right .volume-bar .bar .progress .point {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
+.player .player-right .volume-bar .bar:hover .progress {
   background-color: var(--greenactive);
+}
+
+.player .player-right .volume-bar .bar:hover .point  {
+  display: block;
 }
 
 .player .player-right .volume-bar .bar .progress i{
